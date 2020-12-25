@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap");
+
+:root {
+  --red: #f94f4f;
+  --black: #191921;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 88px;
+}
+
+.link {
+  color: var(--red);
+  font-weight: 800;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--red);
+  display: inline;
+}
+
+.cta {
+  padding: 23px 45px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.cta--black {
+  background-color: var(--black);
+}
+
+.cta--red {
+  background-color: var(--red);
+}
+
+body {
+  margin: 0;
+  font-family: "Commissioner", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  padding: 76px 0;
+  background: linear-gradient(90deg, #fff, 50%, var(--red) 50%);
+  background-position: 50% 50%;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      margin: 0;
+      display: flex;
+      align-items: center;
+
+      li {
+        margin-left: 32px;
+        a {
+          color: #fff;
+        }
+        .cta {
+          margin-left: 48px;
+        }
+      }
+    }
+  }
+}
+
+// Hero
+
+.hero {
+  background: url("../assets/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  padding: 112px 0 160px;
+  .container {
+    .hero__content {
+      max-width: 540px;
+      h1 {
+      }
+      p {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 48px;
+      }
+    }
+  }
+}
+
+// Design Section
+.design {
+  position: relative;
+  display: flex;
+  .design__left {
+    flex: 1;
+  }
+  .design__right {
+    flex: 1;
+    background-color: var(--black);
+    color: #fff;
+    margin: 0 auto;
+    .design__right--content {
+      margin: 200px auto 0;
+      max-width: 445px;
+      h2 {
+        font-size: 56px;
+        line-height: 64px;
+        span {
+          color: var(--red);
+        }
+      }
+      p {
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 48px;
+      }
+    }
+  }
+  .design__icon {
+    position: absolute;
+  }
+}
+
+// Wiining Section
+
+.winning {
+  display: flex;
+  .winning__left {
+    flex: 1;
+    margin-top: 200px;
+    z-index: 99;
+
+    h2 {
+      max-width: 540px;
+      font-size: 56px;
+      line-height: 64px;
+      margin: 0 auto;
+    }
+  }
+  .winning__right {
+    flex: 1;
+    background-color: var(--red);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    padding-top: 210px;
+    padding-bottom: 210px;
+    margin-left: -200px;
+    padding-left: 220px;
+    z-index: 2;
+    .winning__right--content {
+      max-width: 504px;
+      .winning__tile {
+        position: relative;
+        margin-bottom: 100px;
+        h2 {
+          margin: 0;
+          position: absolute;
+          top: -50px;
+          left: -60px;
+          font-size: 80px;
+          line-height: 88px;
+          opacity: 0.25;
+        }
+        h4 {
+          font-size: 20px;
+          line-height: 32px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 32px;
+        }
+      }
+    }
+  }
+}
+
+// Slider section
+.brand__slider {
+  display: flex;
+  position: relative;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  .brand {
+    flex-shrink: 0;
+    width: 100vw;
+    display: flex;
+    scroll-snap-align: start;
+    .brand__left {
+      flex: 1;
+      background-color: var(--black);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .brand__left--content {
+        h2 {
+          max-width: 445px;
+          font-size: 56px;
+          line-height: 64px;
+          color: #fff;
+        }
+        .brand__btn {
+          max-width: 96px;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .brand__right {
+      flex: 1;
+      margin-left: -200px;
+      transform: scale(1.3);
+      z-index: -1;
+    }
+  }
+}
+
+footer {
+  padding: 120px 0;
+  background-image: url("../assets/desktop/bg-pattern-wave-red.svg");
+  background-repeat: no-repeat;
+  background-position: center left -60px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  h2 {
+    font-size: 56px;
+    line-height: 64px;
+    max-width: 635px;
+  }
+}
